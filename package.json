@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dll": "webpack --mode development --config webpack.dll.config.js",
     "start": "webpack serve",
     "build": "webpack"
   },
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/rayhomie/react-qq-music#readme",
   "dependencies": {
+    "antd": "3.26.19",
+    "antd4": "^4.4.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

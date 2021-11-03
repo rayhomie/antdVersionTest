@@ -8,7 +8,8 @@
     "target": "es5",
     "jsx": "react",
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
   },
   "include": ["./src/**/*"]
 }
