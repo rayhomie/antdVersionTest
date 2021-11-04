@@ -32,8 +32,9 @@ module.exports = {
   },
   mode: 'development',
   output: {
+    publicPath: './',
     filename: '[name]_[hash].bundle.js',
-    path: path.join(__dirname, 'dist'), //打包到的文件夹
+    path: path.join(__dirname, 'docs'), //打包到的文件夹
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
