@@ -54,11 +54,11 @@ module.exports = {
       filename: '[name].[chunkhash:8].css',
       chunkFilename: '[id].css',
     }), //引用动态链接库的插件(告诉webpack我们用了哪些动态链接库，该怎么使用这些dll)
-    new webpack.DllReferencePlugin({
-      //需要找到生成的dll动态链接库的manifest映射文件
-      manifest: path.resolve(__dirname, 'dll', 'antd3.manifest.json'),
-      //manifest: require('./dll/react.manifest.json'),//这样也可以
-    }),
+    // new webpack.DllReferencePlugin({
+    //   //需要找到生成的dll动态链接库的manifest映射文件
+    //   manifest: path.resolve(__dirname, 'dll', 'antd3.manifest.json'),
+    //   //manifest: require('./dll/react.manifest.json'),//这样也可以
+    // }),
   ],
   module: {
     rules: [
