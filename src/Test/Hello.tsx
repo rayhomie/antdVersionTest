@@ -1,8 +1,7 @@
 import React from 'react'
 import { Input, Button } from 'antd'
-import Antd4Fom from './Antd4Fom'
-
-import FormTest from './FormTest'
+import Antd3Form from './Antd3Form'
+import Antd4Form from './Antd4Form'
 
 export interface HelloProps {
   compiler: string
@@ -13,8 +12,8 @@ const Hello = (props: HelloProps) => (
   <h1>
     Hello from {props.compiler} and {props.framework}!<Input></Input>
     <Button>按钮</Button>
-    <FormTest />
-    <Antd4Fom />
+    <Antd3Form />
+    <Antd4Form />
   </h1>
 )
 
